@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 0 16px;
   color: #6A6A6A;
 }
 
@@ -16,6 +16,8 @@ form{
   text-align: center;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
+  transition: 2s;
 }
 
 h1{
@@ -60,4 +62,20 @@ a{
   outline: none;
   border: none;
   color: #6A6A6A;
+}
+
+@media (min-width: 769px) {
+  form{
+    background-color: #FFC7CD;
+    border-radius: 35px;
+    width: 715px;
+    height: 622px;
+    padding: 62px 179px 39px;
+    transition: 2s;
+  }
+
+  form input:hover,
+  .button:hover{
+    background-color: #f8dee0;
+  }
 }
