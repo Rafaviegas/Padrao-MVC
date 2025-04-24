@@ -5,6 +5,7 @@ import { AuthService } from './services/auth.service';
 import { AuthController } from './controllers/auth.controller';
 import { JwtStrategy } from 'src/auth/strategies/jwt.strategy';
 import { UserModule } from 'src/users/user.module';
+import { CloudwatchLoggerModule } from 'src/cloudwatch-logger/cloudwatch-logger.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { UserModule } from 'src/users/user.module';
       signOptions: { expiresIn: '1h' },
     }),
     UserModule,
+    CloudwatchLoggerModule
   ],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy],
