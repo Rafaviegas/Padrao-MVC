@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Lucas Maciel Campos",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -18,7 +18,10 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "migrate": "prisma migrate dev --name"
+    "migrate:dev": "prisma migrate dev --schema=src/model/schema.prisma",
+    "migrate:deploy": "prisma migrate deploy --schema=src/model/schema.prisma",
+    "generate": "prisma generate --schema=src/model/schema.prisma",
+    "studio": "prisma studio --schema=src/model/schema.prisma"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
