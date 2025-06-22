@@ -26,7 +26,6 @@ Este projeto é uma aplicação fullstack composta por um backend em **NestJS** 
 ---
 ### 📦 Backend (NestJS)
 
-
 ```bash
 backend/
 ├── src/
