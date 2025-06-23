@@ -22,6 +22,14 @@ async function bootstrap() {
     .setDescription('DOcumentação Swagger da API padrão MVC')
     .setVersion('1.0')
     .addTag('Padrão MVC')
+    .addBearerAuth(
+      {
+        type: 'http',
+        scheme: 'bearer',
+        bearerFormat: 'JWT'
+      },
+      'jwt-auth'
+    )
     .build();
 
   const documentFactory = () => SwaggerModule.createDocument(app, config);
