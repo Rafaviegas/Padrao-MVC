@@ -7,12 +7,64 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-
 model User {
-  id        String   @id @default(cuid())
-  name      String
-  email     String  @unique
-  password  String
-  createdAt DateTime @default(now())
+  id              String   @id @default(cuid())
+  name            String
+  email           String   @unique
+  password        String
+  cargo           String
+  dataEfetivacao  DateTime
+  createdAt       DateTime @default(now())
+
+  
+  emprestimos     Emprestimo[]
+}
+
+model Leitor {
+  id         String   @id @default(cuid())
+  nome       String
+  email      String   @unique
+  Numero     String   @db.VarChar(11)
+  createdAt  DateTime @default(now())
+
+  
+  emprestimos Emprestimo[]
+}
+
+model Livro {
+  id          String     @id @default(cuid())
+  nome        String
+  autor       String
+  editor      String
+  quantidade  Int
+
+  categoriaId String
+  categoria   Categoria  @relation(fields: [categoriaId], references: [id])
+
+  
+  emprestimos Emprestimo[]
+}
+
+model Categoria {
+  id     String  @id @default(cuid())
+  nome   String  @unique
+
+  livros Livro[] 
+}
+
+model Emprestimo {
+  id             String   @id @default(cuid())
+
+  livroId        String
+  livro          Livro    @relation(fields: [livroId], references: [id])
+
+  leitorId       String
+  leitor         Leitor   @relation(fields: [leitorId], references: [id])
+
+  userId         String?
+  user           User?    @relation(fields: [userId], references: [id]) // opcional
+
+  dataEmprestimo DateTime @default(now())
+  dataDevolucao  DateTime?
+  devolvido      Boolean  @default(false)
 }
