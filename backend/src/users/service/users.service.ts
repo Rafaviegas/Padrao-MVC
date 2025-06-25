@@ -36,7 +36,7 @@ export class UserService {
                 name: data.name,
                 password: hashedPassword,
                 cargo: data.cargo,
-                dataEfetivacao: data.dataEfetivacao,
+                dataEfetivacao: new Date(),
 
             },
         });
