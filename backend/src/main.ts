@@ -8,9 +8,9 @@ import { cloudwatchLogger } from 'src/cloudwatch-logger/cloudwatch-logger'
 async function bootstrap() {
   
  const app = await NestFactory.create(AppModule, {
-   logger: WinstonModule.createLogger({
-     transports: cloudwatchLogger.transports,
-    }),
+  //  logger: WinstonModule.createLogger({
+  //    transports: cloudwatchLogger.transports,
+  //   }),
   });
 
   // Valdidatções DTO
