@@ -8,7 +8,7 @@ function Home(){
     <div id='home'>
       <div id='operations'>
         <button onClick={()=> navigate('/users')}>Usuários</button>
-        <button onClick={()=> navigate('/books')}>Livros</button>
+        <button onClick={()=> navigate('/livros')}>Livros</button>
         <button onClick={()=> navigate('/categories')}>Categorias</button>
         <button onClick={()=> navigate('/loans')}>Empréstimos</button>
         <button onClick={()=> navigate('/employees')}>funcionários</button>
