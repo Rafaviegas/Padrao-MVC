@@ -1,0 +1,43 @@
+#edit-categorie {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6ECED;
+  color: #6A6A6A;
+}
+
+form {
+  background-color: #FFC7CD;
+  padding: 40px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+
+form input {
+  height: 60px;
+  padding-left: 15px;
+  border-radius: 15px;
+  background-color: #FCE4E4;
+  border: none;
+  font-size: 18px;
+  color: #6A6A6A;
+  outline: none;
+}
+
+.button {
+  height: 60px;
+  border-radius: 15px;
+  background-color: #FCE4E4;
+  border: none;
+  font-size: 18px;
+  color: #6A6A6A;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f8dee0;
+}

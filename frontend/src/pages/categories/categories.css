@@ -1,0 +1,91 @@
+#categories {
+  text-align: center;
+  height: 100vh;
+  background-color: #F6ECED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  color: #6A6A6A;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #FCE4E4;
+  outline: none;
+  border: none;
+  color: #6A6A6A;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f8dee0;
+}
+
+.list {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background-color: #FFC7CD;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.edit,
+.delete {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.edit {
+  background-color: #95d2fd;
+  margin-right: 10px;
+}
+
+.edit:hover {
+  background-color: #7bbde6;
+}
+
+.delete {
+  background-color: #FD95A0;
+}
+
+.delete:hover {
+  background-color: #f86f83;
+}
