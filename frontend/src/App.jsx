@@ -7,6 +7,9 @@ import AddCategorie from './pages/categories/addcategories'
 import Livros from './pages/livros/livros'
 import AddLivro from './pages/livros/addLivro'
 import EditLivros from './pages/livros/editLivros'
+import Leitores from './pages/leitor/leitor';
+import AddLeitor from './pages/leitor/addLeitor';
+import EditLeitor from './pages/leitor/editLeitor';
 import { ToastContainer } from "react-toastify"
 
 
@@ -24,6 +27,9 @@ function App(){
                     <Route path="/livros" element={<Livros />} />
                     <Route path="/livros/addLivro" element={<AddLivro />} />
                     <Route path="/livros/edit/:id" element={<EditLivros />} />
+                    <Route path="/leitores" element={<Leitores />} />
+                    <Route path="/leitores/addLeitor" element={<AddLeitor />} />
+                    <Route path="/leitores/edit/:id" element={<EditLeitor />} />
                 </Routes>
             </Router>
         </div>

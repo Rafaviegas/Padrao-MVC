@@ -1,0 +1,64 @@
+#add-leitor {
+  text-align: center;
+  height: 100vh;
+  background-color: #F6ECED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  color: #6A6A6A;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFC7CD;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 715px;
+  padding: 62px 40px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+form input {
+  height: 60px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #FCE4E4;
+  outline: none;
+  color: #6A6A6A;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 168px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: #FCE4E4;
+  outline: none;
+  border: none;
+  color: #6A6A6A;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f8dee0;
+}
+
+a {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  color: #FD95A0;
+  font-weight: bold;
+  text-decoration: none;
+}

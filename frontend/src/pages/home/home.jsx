@@ -11,7 +11,7 @@ function Home(){
         <button onClick={()=> navigate('/livros')}>Livros</button>
         <button onClick={()=> navigate('/categories')}>Categorias</button>
         <button onClick={()=> navigate('/loans')}>Empréstimos</button>
-        <button onClick={()=> navigate('/employees')}>funcionários</button>
+        <button onClick={()=> navigate('/leitores')}>Leitor</button>
       </div>
     </div>
   )
